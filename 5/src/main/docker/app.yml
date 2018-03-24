@@ -1,0 +1,14 @@
+version: '2'
+services:
+    loyalty-app:
+        image: loyalty
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://loyalty-mysql:3306/loyalty?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    loyalty-mysql:
+        extends:
+            file: mysql.yml
+            service: loyalty-mysql
