@@ -1,0 +1,5 @@
+Windows does not recognize .war files as executable files even when you add read and execute permissions.
+
+The command that needs to be run on Windows for this to work properly is:
+
+java -jar .\jhipster-registry-3.2.4.war --security.user.password=admin --jhipster.security.authentication.jwt.secret=secret-key --spring.cloud.config.server.native.search-locations=file:./central-config
