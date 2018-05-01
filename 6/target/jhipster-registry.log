@@ -372,3 +372,26 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 10 common frames omitted
 
+2018-04-30 23:08:31.635  INFO 9976 --- [main] i.g.j.registry.JHipsterRegistryApp       : The following profiles are active: swagger,dev,native
+2018-04-30 23:10:43.617  INFO 9976 --- [main] i.g.j.registry.config.WebConfigurer      : Web application configuration, using profiles: swagger
+2018-04-30 23:10:44.088  INFO 9976 --- [main] i.g.j.registry.config.WebConfigurer      : Web application fully configured
+2018-04-30 23:11:06.983  WARN 9976 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-30 23:12:42.017  WARN 9976 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-30 23:13:12.502 DEBUG 9976 --- [main] i.g.j.c.apidoc.SwaggerConfiguration      : Starting Swagger
+2018-04-30 23:13:13.276 DEBUG 9976 --- [main] i.g.j.c.apidoc.SwaggerConfiguration      : Started Swagger in 751 ms
+2018-04-30 23:14:00.461  INFO 9976 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-30 23:14:00.487  INFO 9976 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2018-04-30 23:14:01.013  INFO 9976 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1525151641013 with initial instances count: 0
+2018-04-30 23:15:07.611  INFO 9976 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-30 23:15:07.876  INFO 9976 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-30 23:15:08.309  INFO 9976 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-30 23:15:08.330  INFO 9976 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-30 23:16:28.460  WARN 9976 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with key 'zuulEndpoint' has been registered as an MBean but has no exposed attributes or operations
+2018-04-30 23:18:09.161  INFO 9976 --- [main] i.g.j.registry.JHipsterRegistryApp       : Started JHipsterRegistryApp in 619.956 seconds (JVM running for 631.664)
+2018-04-30 23:18:11.147  INFO 9976 --- [main] i.g.j.registry.JHipsterRegistryApp       : 
+----------------------------------------------------------
+	Application 'jhipster-registry' is running! Access URLs:
+	Local: 		http://localhost:8761
+	External: 	http://192.168.94.2:8761
+	Profile(s): 	[swagger, dev, native]
+----------------------------------------------------------
